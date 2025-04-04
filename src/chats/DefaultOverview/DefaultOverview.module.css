@@ -1,0 +1,33 @@
+/* Main Chat Body */
+.chatList_message_overview {
+  grid-column: 3;
+  height: 100vh; /* Full height of the screen */
+  background-color: rgb(27, 24, 24, 0.86);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Placeholder when no chat is open */
+.chat_not_open {
+  text-align: center;
+  color: white;
+  max-width: 60%;
+}
+
+.chat_not_open span {
+  font-size: 80px;
+  color: grey;
+}
+
+.chat_not_open h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.chat_not_open p {
+  font-size: 16px;
+  color: grey;
+  margin-top: 5px;
+}

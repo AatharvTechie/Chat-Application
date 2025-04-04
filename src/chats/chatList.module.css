@@ -1,0 +1,39 @@
+/* theme changing */
+
+.dark_mode {
+  background: rgb(93, 90, 90);
+  color: white;
+}
+
+.light_mode {
+  background: rgb(220, 215, 215);
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+  font-family: sans-serif, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Main Grid Container */
+.chatList_overview {
+  display: grid;
+  grid-template-rows: 50px auto; /* Top bar fixed, remaining area flexible */
+  grid-template-columns: 60px 330px auto; /* Sidebar (1fr), Chat List (2fr), Main Chat (3fr) */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+}

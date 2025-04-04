@@ -1,0 +1,310 @@
+.move_right_modeBall {
+  transform: translateX(20px);
+  transition: transform 0.3s ease-in-out;
+  background-color: rgb(74, 248, 40);
+}
+
+/* tab active css */
+.nav_icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.nav_icon:hover {
+  background-color: #ccc;
+}
+
+.active {
+  background-color: green !important;
+  color: white !important;
+}
+
+.hover {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Left Navigation Sidebar */
+.left_navigation_overview {
+  grid-column: 1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(31 26 26 / 94%);
+  padding: 20px 0;
+  overflow: visible !important;
+  z-index: 1000;
+}
+
+/* Top navigation icons */
+.left_top_nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  font-size: 24px;
+  color: white;
+  margin: 30px 0px;
+}
+
+.left_top_nav span {
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Bottom navigation icons */
+.left_bottom_nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  font-size: 24px;
+  color: white;
+  margin: 50px 0px;
+}
+
+.left_bottom_nav span {
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.left_bottom_nav span:hover {
+  color: rgb(36, 211, 36);
+}
+
+/* Profile Box (Initially Hidden) */
+.profile_box_container {
+  width: 459px;
+  height: 500px;
+  position: absolute;
+  bottom: 64px;
+  left: 64px;
+  overflow: hidden;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 64px;
+  left: 64px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: hsl(0deg 2.26% 21.25%);
+  border: 1px solid #bababa8c;
+  background-color: hsl(0deg 2.26% 21.25%);
+  border: 1px solid #bababa8c;
+}
+
+.profile_image_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border: 2px dashed #aaa;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  transition: border 0.3s ease-in-out;
+}
+
+.profile_image_box:hover {
+  border: 2px solid #007bff;
+}
+
+.profile_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.profile_input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.upload_text {
+  position: absolute;
+  bottom: 10px;
+  font-size: 12px;
+  color: #666;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+
+.users_details_box {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  padding: 10px;
+}
+.users_details_box input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 4px ridge rgb(255, 255, 255);
+  background-color: hsl(0deg 0.31% 25.28% / 57%);
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.users_details_box input::placeholder {
+  color: rgb(164, 160, 160);
+}
+
+.users_details_box input:focus::placeholder {
+  color: rgb(193, 189, 189);
+}
+
+.users_details_box input:focus {
+  box-shadow: none;
+  border-bottom-color: rgb(42, 224, 42);
+  transition: all 0.3s ease;
+}
+
+.buttons_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 20px;
+}
+
+.logout_btn,
+.close_btn {
+  width: 98px;
+  height: 41px;
+  border: none;
+  margin: 10px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: rgb(218, 15, 15);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.logout_btn:hover,
+.close_btn:hover {
+  cursor: pointer;
+}
+
+.settings_box_container {
+  position: absolute;
+  bottom: 64px;
+  left: 64px;
+  width: 459px;
+  height: 370px; /* Initially hidden */
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: hsl(0deg 2.26% 21.25%);
+  border: 1px solid #bababa8c;
+  padding: 0px; /* Initially no padding */
+  transition: height 0.4s ease-in-out, padding 0.4s ease-in-out;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.settings_box_container h2 {
+  color: white;
+  text-align: center;
+  margin: 30px 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.main_box button {
+  width: 98px;
+  height: 41px;
+  border: none;
+  margin: 0 20px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: rgb(218, 15, 15);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.main_box button:hover {
+  cursor: pointer;
+}
+
+/* Mode Settings */
+.mode {
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.mode p {
+  color: #fff;
+  font-size: 20px;
+}
+
+/* Toggle Button */
+.mode_toggler {
+  position: relative;
+  width: 2vw;
+  height: 27px;
+  padding: 6px;
+  border-radius: 20px;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #fff;
+}
+
+.mode_toggler .mode_ball {
+  position: absolute;
+  left: 0;
+  height: 27px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: rgba(62, 59, 59, 0.671);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Blocked & Favourite Chats */
+.blocked_chats,
+.favourite_chats {
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.blocked_chats p,
+.favourite_chats p {
+  color: #fff;
+  font-size: 20px;
+}
+
+.blocked_chats span,
+.favourite_chats span {
+  font-size: 25px;
+  color: white;
+}
+
+.blocked_chats span:hover,
+.favourite_chats span:hover {
+  cursor: pointer;
+}

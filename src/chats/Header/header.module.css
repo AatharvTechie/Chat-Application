@@ -1,0 +1,51 @@
+/* Header (Top Bar) */
+.chatList_top_overview {
+  grid-row: 1;
+  grid-column: 1 / -1; /* Full width */
+  background-color: rgb(31 26 26 / 94%);
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+/* Left side (WhatsApp Icon + Text) */
+.chatList_top_overview_left_side {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+/* WhatsApp Icon */
+.whatsApp_icon {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(36, 211, 36);
+}
+
+/* Top Right Icons */
+.chatList_top_overview_right_side {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 41px;
+  padding: 0px 11px;
+}
+
+.chatList_top_overview_right_side span {
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  color: white;
+}
+
+.minimize:hover,
+.resize:hover {
+  color: beige;
+}
+
+.close:hover {
+  color: rgb(255, 87, 54);
+}
